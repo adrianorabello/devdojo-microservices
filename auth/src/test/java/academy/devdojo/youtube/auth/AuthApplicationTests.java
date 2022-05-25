@@ -1,21 +1,21 @@
 package academy.devdojo.youtube.auth;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-@SpringBootTest
 @Slf4j
-class AuthApplicationTests {
+@ExtendWith(SpringExtension.class)
+public class AuthApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-	@Test
-	public void test(){
 
-		log.info(new BCryptPasswordEncoder().encode(" Password ********** ->devdojo"));
-	}
+    @Test
+    public void test() {
+
+        Assertions.assertEquals(Boolean.TRUE,Boolean.TRUE); s
+    }
 
 }

@@ -2,9 +2,10 @@ version: '3.1'
 
 services:
   devdojomicroservice:
+    container_name: microservices_db
     image: mysql:5.7
     volumes:
-      - ./devdojomicroservices:/var/lib/mysql
+      - ./mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devdojomicroservices

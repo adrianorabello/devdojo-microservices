@@ -1,10 +1,10 @@
-package academy.devdojo.youtube.discovery;
+package academy.devdojo.youtube;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryApplicationTests {
+class TokenApplicationTests {
 
     @Test
     void contextLoads() {

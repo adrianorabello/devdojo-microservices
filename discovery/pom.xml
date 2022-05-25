@@ -35,13 +35,12 @@
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
             <version>${javax-activation.version}</version>
-            <classifier>pom</classifier>
         </dependency>
 
         <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>javax.activation-api</artifactId>
-            <version>1.2.0</version>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>${jaxb-runtime.version}</version>
         </dependency>
 
     </dependencies>
@@ -67,6 +66,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

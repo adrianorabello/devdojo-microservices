@@ -1,4 +1,4 @@
-package academy.devdojo.youtube.token.creator;
+package academy.devdojo.youtube.security.token.creator;
 
 
 import academy.devdojo.youtube.core.model.ApplicationUser;
@@ -63,6 +63,7 @@ public class TokenCreator {
                         .stream()
                         .map(GrantedAuthority::getAuthority)
                         .collect(Collectors.toList()))
+                .claim("userId", applicationUser.getId())
                 .issuer("devdojo microservice")
                 .issueTime(new Date())
                 .expirationTime(new Date(System.currentTimeMillis() + (jwtConfiguration.getExpiration() * 1000)))

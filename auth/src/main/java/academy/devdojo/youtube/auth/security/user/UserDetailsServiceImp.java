@@ -30,7 +30,7 @@ public class UserDetailsServiceImp implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        log.info("Dentro do metodo find by user name ");
+        log.info("Dentro do metodo find by username ");
         ApplicationUser user = applicationUserRepository.findByUsername(username);
 
         if (user == null)
